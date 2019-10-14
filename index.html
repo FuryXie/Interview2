@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/mui-icons-extra.css" rel="stylesheet" />
+		<link href="css/x.css" rel="stylesheet" />
+		<script src="js/jquery-3.3.1.min.js"></script>
+	</head>
+
+	<body>
+		<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 菜单容器 -->
+				<aside class="mui-off-canvas-left" id="offCanvasSide">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!-- 菜单具体展示内容 -->
+							
+						</div>
+					</div>
+				</aside>
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav x-bg-o">
+					<!-- <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a> -->
+					<a  href="#offCanvasSide"><img src="images/bee.jpg" class="x-bee" height="30px" ></a>
+					<!-- <h1 class="mui-title">标题</h1> -->
+					<!-- <input type="text" placeholder="hhhh" /> -->
+					<div class="mui-input-row mui-search x-search">
+						<input type="search" class="mui-input-clear" placeholder="">
+					</div>
+					<span class="mui-icon mui-icon-extra mui-icon-extra-sweep x-sweep x-bg-w"></span>
+					<span class="mui-icon mui-icon-extra mui-icon-extra-notice x-notice x-bg-w"></span>
+				</header>
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-extra mui-icon-extra-express"></span>
+						<span class="mui-tab-label">闪送超市</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-person"></span>
+						<span class="mui-tab-label">我的</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+						<span class="mui-tab-label">￥0起送</span>
+					</a>
+				</nav>
+				<!-- 主页面内容容器 -->
+				<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 主界面具体展示内容 -->
+						<div id="slider" class="mui-slider" style="height: 141px;">
+							<div class="mui-slider-group mui-slider-loop">
+								<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="http:\/\/placehold.it\/750x281" width="750px" height="281px">
+									</a>
+								</div>
+								<!-- 第一张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/s1.jpg">
+									</a>
+								</div>
+								<!-- 第二张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="http:\">
+									</a>
+								</div>
+								<!-- 第三张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="http:\">
+									</a>
+								</div>
+								<!-- 第四张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="http:\/\/placehold.it\/400x300">
+									</a>
+								</div>
+								<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="http:\/\/placehold.it\/400x300">
+									</a>
+								</div>
+							</div>
+							<div class="mui-slider-indicator">
+								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+							</div>
+						</div>
+						<!-- 四个图标 -->
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-home"></span>
+									<div class="mui-media-body">抽奖</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-email"></span>
+									<div class="mui-media-body">兑奖</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-chatbubble"><span class="mui-badge mui-badge-red x-redtag">hot</span></span>
+									<div class="mui-media-body">促销</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-extra mui-icon-extra-express"></span>
+									<div class="mui-media-body">闪送超市</div>
+								</a>
+							</li>
+
+						</ul>
+						<!-- 列表 -->
+						<ul id="testUl" class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-right x-img-one" src="images/img001.png">
+									<div class="mui-media-body">
+										<h3 class="x-h1-pink">Fresh奶</h3>
+										<span class="x-text-pink">光明畅优乳杆菌<strong>6</strong>元/<span>2</span>瓶</span>
+										</br>
+										<span class="x-text-t">更多优惠&nbsp;&nbsp;&nbsp;低至5折</span>
+										<!-- <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p> -->
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-right x-img-one" src="images/img002.jpg">
+									<div class="mui-media-body">
+										<h3 class="x-h1-blue">Fresh奶</h3>
+										<span class="x-text-blue">光明畅优乳杆菌<strong>6</strong>元/<span>2</span>瓶</span>
+										</br>
+										<span class="x-text-t">更多优惠&nbsp;&nbsp;&nbsp;低至5折</span>
+										<!-- <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p> -->
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-right x-img-one" src="images/img001.png">
+									<div class="mui-media-body">
+										<h3 class="x-h1-pink">Fresh奶</h3>
+										<span class="x-text-pink">光明畅优乳杆菌<strong>6</strong>元/<span>2</span>瓶</span>
+										</br>
+										<span class="x-text-t">更多优惠&nbsp;&nbsp;&nbsp;低至5折</span>
+										<!-- <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p> -->
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-right x-img-one" src="images/img002.jpg">
+									<div class="mui-media-body">
+										<h3 class="x-h1-blue">Fresh奶</h3>
+										<span class="x-text-blue">光明畅优乳杆菌<strong>6</strong>元/<span>2</span>瓶</span>
+										</br>
+										<span class="x-text-t">更多优惠&nbsp;&nbsp;&nbsp;低至5折</span>
+										<!-- <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p> -->
+									</div>
+								</a>
+							</li>
+						</ul>
+					
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			var countDown = 0;//下拉次数
+			var countUp = 0;//上拉次数
+			mui.init({
+			    pullRefresh: {
+			        container: "#refreshContainer",//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+			        down: {//下拉刷新
+			            height: 50,//可选,默认50.触发下拉刷新拖动距离,
+			            auto: false,//可选,默认false.首次加载自动下拉刷新一次
+			            contentdown: "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+			            contentover: "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+			            contentrefresh: "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+			            callback: async function () {//必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+			                if (countDown >= 3) {
+			                    mui.toast("没有更多数据了");
+			                    //没有数据
+			                    mui('#refreshContainer').pullRefresh().endPulldownToRefresh(true);
+			                    return;
+			                }
+			                //模拟向服务器获取数据的等待时间
+			                await sleep(1000);
+			                ///*每次加载动态的添加一个li*/
+			                $("#testUl li:first").before($(`<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-right x-img-one" src="images/img002.jpg">
+									<div class="mui-media-body">
+										<h3 class="x-h1-blue">Fresh奶</h3>
+										<span class="x-text-blue">光明畅优乳杆菌<strong>6</strong>元/<span>2</span>瓶</span>
+										</br>
+										<span class="x-text-t">更多优惠&nbsp;&nbsp;&nbsp;低至5折</span>
+										<!-- <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p> -->
+									</div>
+								</a>
+							</li>`));
+			                mui.toast("更新了一条数据");
+			                ////没有更多内容了，endPulldown 传入true， 不再执行下拉刷新
+			                mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+			                countDown++;
+			            }
+			        },
+			        up: {//上拉加载
+			            height: 50,//可选.默认50.触发上拉加载拖动距离
+			            auto: false,//可选,默认false.自动上拉加载一次
+			            contentrefresh: "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+			            contentnomore: '没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+			            callback: async function () {//必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+			                if (countUp >= 3) {
+			                    this.endPullupToRefresh(true);//没有数据
+			                    return;
+			                }
+			                await sleep(1000);
+			                /*每次加载动态的添加一个li*/
+			                $("#testUl").append($("<li>" + new Date() + "</li>"));
+			                this.endPullupToRefresh(false)
+			                countUp++;
+			            }
+			        }
+			    }
+			});
+			
+			//模拟线程等待,ms:单位毫秒
+			function sleep(ms) {
+			    return new Promise(resolve => setTimeout(resolve, ms));
+			}
+		</script>
+	</body>
+
+</html>

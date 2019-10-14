@@ -1,0 +1,77 @@
+.x-search{
+	position: absolute !important;
+	margin: 0 0px 0px 55px !important;
+}
+.x-notice{
+	position: absolute !important;
+	margin: 0px 0px 0px 320px !important;
+}
+.x-bg-o{
+	background: #fdc72f;
+}
+.x-bg-w{
+	color: #fff !important;
+}
+.x-sweep{
+	position: absolute !important;
+	margin: 0px 0px 0px 290px !important;
+}
+.x-redtag{
+	margin-left: -16px !important;
+}
+.x-bee{
+	position: absolute;
+	margin: 7px 0 0 0;
+}
+#testUl li{
+	height: 140px !important;
+}
+.x-img-one{
+    width: 158px !important;
+    height: 120px !important;
+	/* */
+	position: absolute !important;
+	margin: 0px 0px 0 190px !important;
+}
+.mui-table-view .mui-media-object {
+    line-height: 42px !important;
+    max-width: 300px !important;
+    /* height: 200px; */
+}
+.x-h1-pink{
+	color: #f14d92;
+	padding-bottom: 20px;
+}
+.x-text-pink{
+	font-size: 16px;
+	border-bottom: 1px solid #000;
+	/* text-decoration: underline; */
+}
+.x-text-pink strong{
+	font-size: 30px;
+	color: #f14d92;
+}
+.x-text-pink span{
+	color: #f14d92;
+}
+/* x-text-blue */
+.x-h1-blue{
+	color: #00f3ff;
+	padding-bottom: 20px;
+}
+.x-text-blue{
+	font-size: 16px;
+	border-bottom: 1px solid #000;
+	/* text-decoration: underline; */
+}
+.x-text-blue strong{
+	font-size: 30px;
+	color: #00f3ff;
+}
+.x-text-blue span{
+	color: #00f3ff;
+}
+.x-text-t{
+	font-size: 14px;
+	color: #8a8a8a;
+}
